@@ -7,15 +7,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/base/api")
+
 public class baseController {
 	
-	public Map<String, Object> init() {
+	
+	/*
+	public Map<String, Object> init() { 
 		//demo
 	Map<String, Object> params = new HashMap<>();
 	params.put("nombre", "Larry");
 	params.put("apellido","Caichihua");	
 	
-	return params ;}
+	return params ;} */
+	@RequestMapping(value = "/")
+	public String hola() {
+		
+		return "hola mundi ";
+	}
 
 }
