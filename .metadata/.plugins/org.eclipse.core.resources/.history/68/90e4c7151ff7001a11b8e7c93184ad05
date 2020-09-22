@@ -1,0 +1,5 @@
+package com.cavetech.seiya.crudMongoSwagger.controller;
+
+public class ProductController {
+
+}

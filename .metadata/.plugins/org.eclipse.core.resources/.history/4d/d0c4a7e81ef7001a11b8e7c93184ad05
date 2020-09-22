@@ -1,0 +1,5 @@
+package com.cavetech.seiya.crudMongoSwagger.repositories;
+
+public interface IProductDAO {
+
+}

@@ -1,0 +1,7 @@
+package com.cavetech.seiya.crudMongoSwagger.repositories;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface IProductDAO extends MongoRepository<T, ID>{
+
+}

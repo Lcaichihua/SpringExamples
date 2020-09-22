@@ -1,0 +1,7 @@
+package com.cavetech.seiya.crudMongoSwagger.models;
+
+
+@Document
+public class ProductDTO {
+
+}

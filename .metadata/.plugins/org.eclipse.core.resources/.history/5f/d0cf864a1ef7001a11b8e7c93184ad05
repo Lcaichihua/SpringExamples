@@ -1,0 +1,12 @@
+package com.cavetech.seiya.crudMongoSwagger.models;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collation = "products")
+public class ProductDTO {
+	@iD
+	private String _id;
+	private String name;
+	private Double price;
+	private Double expiry_date;
+}

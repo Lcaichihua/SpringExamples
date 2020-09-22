@@ -1,0 +1,25 @@
+package com.cavetech.seiya.crudMongoSwagger;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+@SpringBootApplication
+@EnableSwagger2
+public class CrudMongoSwaggerApplication extends SpringBootServletInitializer {
+
+	
+	@Bean
+	  public Docket productsApi() {
+	    return new Docket(DocumentationType.SWAGGER_2)
+	        .select()
+	          .apis(RequestHandlerSelectors.any())
+	          .paths(PathSelectors.any())
+	          .build();
+	}
+	
+	public static void main(String[] args) {
+		SpringApplication.run(CrudMongoSwaggerApplication.class, args);
+	}
+
+}
