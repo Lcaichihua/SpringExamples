@@ -7,12 +7,12 @@ spring init \
 --build=gradle \
 --java-version=1.8 \
 --packaging=jar \
---name=product-service \
---package-name=se.magnus.microservices.core.product \
---groupId=se.magnus.microservices.core.product \
---dependencies=actuator,webflux \
+--name=util \
+--package-name=se.magnus.api \
+--groupId=se.magnus.microservices.api \
+--dependencies=webflux \
 --version=1.0.0-SNAPSHOT \
-product-service
+util
 
 spring init \
 --boot-version=2.1.0.RELEASE \
